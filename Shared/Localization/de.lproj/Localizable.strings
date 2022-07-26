@@ -40,4 +40,4 @@
 "%d lanes" = "%d Bahnen";
 "View" = "Ansicht";
 "Show all lanes" = "Zeige alle Bahnen";
-
+"Source Code is available on [GitHub](%@) under the MIT license." = "Der Source-Code ist auf [GitHub](%@) unter der MIT-Lizenz verfügbar.";

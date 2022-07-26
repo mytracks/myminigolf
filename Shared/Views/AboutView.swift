@@ -30,7 +30,12 @@ struct AboutView: View {
                 }
                 .padding()
                 VStack {
-                    Text("Support: dirk@stichling.info"~)
+                    let email = "dirk@stichling.info"
+                    Text(.init(String(format: "Support: [%@](mailto:%@)"~, email, email)))
+                }
+                VStack {
+                    Text(.init(String(format: "Source Code is available on [GitHub](%@) under the MIT license."~, "https://github.com/mytracks/myminigolf")))
+                        .multilineTextAlignment(.center)
                 }
                 .padding()
                 Spacer()
