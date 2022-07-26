@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CFB033AA289052AB00A06ADA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CFB033A9289052AB00A06ADA /* .gitignore */; };
+		CFB033AC289053D600A06ADA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CFB033AB289053D600A06ADA /* README.md */; };
 		CFFB9B22288DA142000DE729 /* myminigolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9B12288DA141000DE729 /* myminigolfApp.swift */; };
 		CFFB9B26288DA142000DE729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFFB9B14288DA142000DE729 /* Assets.xcassets */; };
 		CFFB9C09288DA248000DE729 /* NewPlayerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF4288DA248000DE729 /* NewPlayerButton.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		CFB033A9289052AB00A06ADA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CFB033AB289053D600A06ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CFFB9B12288DA141000DE729 /* myminigolfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myminigolfApp.swift; sourceTree = "<group>"; };
 		CFFB9B14288DA142000DE729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFFB9B19288DA142000DE729 /* myMinigolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMinigolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 		CFFB9B0C288DA141000DE729 = {
 			isa = PBXGroup;
 			children = (
+				CFB033AB289053D600A06ADA /* README.md */,
 				CFB033A9289052AB00A06ADA /* .gitignore */,
 				CFFB9B11288DA141000DE729 /* Shared */,
 				CFFB9B1A288DA142000DE729 /* Products */,
@@ -213,6 +216,7 @@
 			files = (
 				CFFB9B26288DA142000DE729 /* Assets.xcassets in Resources */,
 				CFB033AA289052AB00A06ADA /* .gitignore in Resources */,
+				CFB033AC289053D600A06ADA /* README.md in Resources */,
 				CFFB9C3D288DA5B9000DE729 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
