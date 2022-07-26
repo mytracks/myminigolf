@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  myminigolf
+
+  Created by Dirk Stichling on 24.07.22.
+  
+*/
+
+"Players" = "Spieler";
+"Version %@ (%@)" = "Version %@ (%@)";
+"Made with" = "Erstellt mit";
+"and SwiftUI" = "und SwiftUI";
+"on Mac and iPad" = "auf iPad und Mac";
+"by Dirk Stichling" = "von Dirk Stichling";
+"Support: dirk@stichling.info" = "Support: dirk@stichling.info";
+"Close" = "Schließen";
+"Welcome to myMinigolf Board." = "Willkommen bei myMinigolf Board";
+"Add some players by tapping the button with the plus sign at the bottom." = "Füge Spieler hinzu, indem du auf das Symbol mit dem Plus tippst.";
+"Either add more players or tap a player's card to start." = "Füge entweder weitere Spieler hinzu oder tippe auf eine Spielerkarte um zu starten.";
+"Description" = "Beschreibung";
+"Delete" = "Löschen";
+"Cancel" = "Abbrechen";
+"Do you want to delete this history entry? This action cannot be undone." = "Möchtest du diesen Spielverlauf löschen? Diese Aktion kannst du nicht rückgängig machen.";
+"Edit" = "Löschen";
+"Game History" = "Spielverläufe";
+"New Game" = "Neues Spiel";
+"Settings" = "Einstellungen";
+"About myMinigolf Board" = "Über myMinigolf Board";
+"When you start a new game your current game will be saved in the game history." = "Wenn du ein neues Spiel startest, dann wird dein aktuelles Spiel automatisch in den Spielverläufen gespeichert.";
+"Start" = "Start";
+"Lane" = "Bahn";
+"Strokes" = "Schläge";
+"Save" = "Speichern";
+"Name:" = "Name:";
+"New Player" = "Neuer Spieler";
+"Add" = "Hinzufügen";
+"Game" = "Spiel";
+"These settings will be used when you start a new game." = "Diese Einstellungen werden verwendet, wenn du ein neues Spiel startest.";
+"Max %d strokes" = "Max. %d Schläge";
+"%d lanes" = "%d Bahnen";
+"View" = "Ansicht";
+"Show all lanes" = "Zeige alle Bahnen";
+

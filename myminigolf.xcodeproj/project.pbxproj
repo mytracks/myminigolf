@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFFB9B22288DA142000DE729 /* myminigolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9B12288DA141000DE729 /* myminigolfApp.swift */; };
+		CFFB9B26288DA142000DE729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFFB9B14288DA142000DE729 /* Assets.xcassets */; };
+		CFFB9C09288DA248000DE729 /* NewPlayerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF4288DA248000DE729 /* NewPlayerButton.swift */; };
+		CFFB9C0D288DA248000DE729 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF6288DA248000DE729 /* SettingsView.swift */; };
+		CFFB9C0F288DA248000DE729 /* ShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF7288DA248000DE729 /* ShotView.swift */; };
+		CFFB9C11288DA248000DE729 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF8288DA248000DE729 /* PlayerCard.swift */; };
+		CFFB9C13288DA248000DE729 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF9288DA248000DE729 /* MainScreen.swift */; };
+		CFFB9C15288DA248000DE729 /* HistoryEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFA288DA248000DE729 /* HistoryEntryView.swift */; };
+		CFFB9C17288DA248000DE729 /* HolesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFB288DA248000DE729 /* HolesCard.swift */; };
+		CFFB9C19288DA248000DE729 /* HistoryPlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFC288DA248000DE729 /* HistoryPlayerCard.swift */; };
+		CFFB9C1B288DA248000DE729 /* NewHoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFD288DA248000DE729 /* NewHoleView.swift */; };
+		CFFB9C1D288DA248000DE729 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFE288DA248000DE729 /* AboutView.swift */; };
+		CFFB9C1F288DA248000DE729 /* HistoryEntryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFF288DA248000DE729 /* HistoryEntryEditView.swift */; };
+		CFFB9C21288DA248000DE729 /* NewGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C00288DA248000DE729 /* NewGameView.swift */; };
+		CFFB9C23288DA248000DE729 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C01288DA248000DE729 /* HistoryView.swift */; };
+		CFFB9C29288DA248000DE729 /* HoleNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C04288DA248000DE729 /* HoleNumberView.swift */; };
+		CFFB9C2D288DA248000DE729 /* DataSaveLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C06288DA248000DE729 /* DataSaveLoad.swift */; };
+		CFFB9C2F288DA248000DE729 /* MainMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C07288DA248000DE729 /* MainMenuButton.swift */; };
+		CFFB9C31288DA248000DE729 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C08288DA248000DE729 /* AppStyle.swift */; };
+		CFFB9C37288DA38E000DE729 /* GameHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C35288DA38D000DE729 /* GameHistory.swift */; };
+		CFFB9C38288DA38E000DE729 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C36288DA38D000DE729 /* GameData.swift */; };
+		CFFB9C3D288DA5B9000DE729 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFFB9C3F288DA5B9000DE729 /* Localizable.strings */; };
+		CFFB9C42288DA66E000DE729 /* LocalizationPostfixOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C41288DA66E000DE729 /* LocalizationPostfixOperator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CFFB9B12288DA141000DE729 /* myminigolfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myminigolfApp.swift; sourceTree = "<group>"; };
+		CFFB9B14288DA142000DE729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFFB9B19288DA142000DE729 /* myMinigolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMinigolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFFB9BF4288DA248000DE729 /* NewPlayerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPlayerButton.swift; sourceTree = "<group>"; };
+		CFFB9BF6288DA248000DE729 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CFFB9BF7288DA248000DE729 /* ShotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotView.swift; sourceTree = "<group>"; };
+		CFFB9BF8288DA248000DE729 /* PlayerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
+		CFFB9BF9288DA248000DE729 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		CFFB9BFA288DA248000DE729 /* HistoryEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryEntryView.swift; sourceTree = "<group>"; };
+		CFFB9BFB288DA248000DE729 /* HolesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolesCard.swift; sourceTree = "<group>"; };
+		CFFB9BFC288DA248000DE729 /* HistoryPlayerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryPlayerCard.swift; sourceTree = "<group>"; };
+		CFFB9BFD288DA248000DE729 /* NewHoleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHoleView.swift; sourceTree = "<group>"; };
+		CFFB9BFE288DA248000DE729 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		CFFB9BFF288DA248000DE729 /* HistoryEntryEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryEntryEditView.swift; sourceTree = "<group>"; };
+		CFFB9C00288DA248000DE729 /* NewGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameView.swift; sourceTree = "<group>"; };
+		CFFB9C01288DA248000DE729 /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		CFFB9C04288DA248000DE729 /* HoleNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoleNumberView.swift; sourceTree = "<group>"; };
+		CFFB9C06288DA248000DE729 /* DataSaveLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSaveLoad.swift; sourceTree = "<group>"; };
+		CFFB9C07288DA248000DE729 /* MainMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuButton.swift; sourceTree = "<group>"; };
+		CFFB9C08288DA248000DE729 /* AppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		CFFB9C35288DA38D000DE729 /* GameHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistory.swift; sourceTree = "<group>"; };
+		CFFB9C36288DA38D000DE729 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		CFFB9C3E288DA5B9000DE729 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CFFB9C40288DA600000DE729 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CFFB9C41288DA66E000DE729 /* LocalizationPostfixOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationPostfixOperator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFFB9B16288DA142000DE729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFFB9B0C288DA141000DE729 = {
+			isa = PBXGroup;
+			children = (
+				CFFB9B11288DA141000DE729 /* Shared */,
+				CFFB9B1A288DA142000DE729 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFFB9B11288DA141000DE729 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB9C3A288DA56F000DE729 /* Localization */,
+				CFFB9C39288DA3BA000DE729 /* Utilities */,
+				CFFB9C34288DA36F000DE729 /* Model */,
+				CFFB9C33288DA2FF000DE729 /* Views */,
+				CFFB9B12288DA141000DE729 /* myminigolfApp.swift */,
+				CFFB9B14288DA142000DE729 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CFFB9B1A288DA142000DE729 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB9B19288DA142000DE729 /* myMinigolf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFFB9C33288DA2FF000DE729 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB9BFE288DA248000DE729 /* AboutView.swift */,
+				CFFB9BF9288DA248000DE729 /* MainScreen.swift */,
+				CFFB9BFF288DA248000DE729 /* HistoryEntryEditView.swift */,
+				CFFB9BFA288DA248000DE729 /* HistoryEntryView.swift */,
+				CFFB9BFC288DA248000DE729 /* HistoryPlayerCard.swift */,
+				CFFB9C01288DA248000DE729 /* HistoryView.swift */,
+				CFFB9C04288DA248000DE729 /* HoleNumberView.swift */,
+				CFFB9BFB288DA248000DE729 /* HolesCard.swift */,
+				CFFB9C07288DA248000DE729 /* MainMenuButton.swift */,
+				CFFB9C00288DA248000DE729 /* NewGameView.swift */,
+				CFFB9BFD288DA248000DE729 /* NewHoleView.swift */,
+				CFFB9BF4288DA248000DE729 /* NewPlayerButton.swift */,
+				CFFB9BF8288DA248000DE729 /* PlayerCard.swift */,
+				CFFB9BF6288DA248000DE729 /* SettingsView.swift */,
+				CFFB9BF7288DA248000DE729 /* ShotView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFFB9C34288DA36F000DE729 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB9C36288DA38D000DE729 /* GameData.swift */,
+				CFFB9C35288DA38D000DE729 /* GameHistory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFFB9C39288DA3BA000DE729 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB9C08288DA248000DE729 /* AppStyle.swift */,
+				CFFB9C06288DA248000DE729 /* DataSaveLoad.swift */,
+				CFFB9C41288DA66E000DE729 /* LocalizationPostfixOperator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CFFB9C3A288DA56F000DE729 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB9C3F288DA5B9000DE729 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFFB9B18288DA142000DE729 /* myminigolf (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFFB9B2A288DA142000DE729 /* Build configuration list for PBXNativeTarget "myminigolf (iOS)" */;
+			buildPhases = (
+				CFFB9B15288DA142000DE729 /* Sources */,
+				CFFB9B16288DA142000DE729 /* Frameworks */,
+				CFFB9B17288DA142000DE729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "myminigolf (iOS)";
+			productName = "myminigolf (iOS)";
+			productReference = CFFB9B19288DA142000DE729 /* myMinigolf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFFB9B0D288DA141000DE729 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CFFB9B18288DA142000DE729 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CFFB9B10288DA141000DE729 /* Build configuration list for PBXProject "myminigolf" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = CFFB9B0C288DA141000DE729;
+			productRefGroup = CFFB9B1A288DA142000DE729 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFFB9B18288DA142000DE729 /* myminigolf (iOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFFB9B17288DA142000DE729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFB9B26288DA142000DE729 /* Assets.xcassets in Resources */,
+				CFFB9C3D288DA5B9000DE729 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFFB9B15288DA142000DE729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFB9C15288DA248000DE729 /* HistoryEntryView.swift in Sources */,
+				CFFB9C2F288DA248000DE729 /* MainMenuButton.swift in Sources */,
+				CFFB9C2D288DA248000DE729 /* DataSaveLoad.swift in Sources */,
+				CFFB9C19288DA248000DE729 /* HistoryPlayerCard.swift in Sources */,
+				CFFB9C38288DA38E000DE729 /* GameData.swift in Sources */,
+				CFFB9C37288DA38E000DE729 /* GameHistory.swift in Sources */,
+				CFFB9C0F288DA248000DE729 /* ShotView.swift in Sources */,
+				CFFB9C31288DA248000DE729 /* AppStyle.swift in Sources */,
+				CFFB9C29288DA248000DE729 /* HoleNumberView.swift in Sources */,
+				CFFB9C1F288DA248000DE729 /* HistoryEntryEditView.swift in Sources */,
+				CFFB9C1D288DA248000DE729 /* AboutView.swift in Sources */,
+				CFFB9C13288DA248000DE729 /* MainScreen.swift in Sources */,
+				CFFB9C23288DA248000DE729 /* HistoryView.swift in Sources */,
+				CFFB9C11288DA248000DE729 /* PlayerCard.swift in Sources */,
+				CFFB9C0D288DA248000DE729 /* SettingsView.swift in Sources */,
+				CFFB9C42288DA66E000DE729 /* LocalizationPostfixOperator.swift in Sources */,
+				CFFB9B22288DA142000DE729 /* myminigolfApp.swift in Sources */,
+				CFFB9C1B288DA248000DE729 /* NewHoleView.swift in Sources */,
+				CFFB9C09288DA248000DE729 /* NewPlayerButton.swift in Sources */,
+				CFFB9C17288DA248000DE729 /* HolesCard.swift in Sources */,
+				CFFB9C21288DA248000DE729 /* NewGameView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CFFB9C3F288DA5B9000DE729 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFFB9C3E288DA5B9000DE729 /* en */,
+				CFFB9C40288DA600000DE729 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFFB9B28288DA142000DE729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFFB9B29288DA142000DE729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CFFB9B2B288DA142000DE729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_TEAM = 4TNB35NY7G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.stichling.myminigolf;
+				PRODUCT_NAME = myMinigolf;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFFB9B2C288DA142000DE729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_TEAM = 4TNB35NY7G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.stichling.myminigolf;
+				PRODUCT_NAME = myMinigolf;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFFB9B10288DA141000DE729 /* Build configuration list for PBXProject "myminigolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFFB9B28288DA142000DE729 /* Debug */,
+				CFFB9B29288DA142000DE729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFFB9B2A288DA142000DE729 /* Build configuration list for PBXNativeTarget "myminigolf (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFFB9B2B288DA142000DE729 /* Debug */,
+				CFFB9B2C288DA142000DE729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFFB9B0D288DA141000DE729 /* Project object */;
+}
