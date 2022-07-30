@@ -39,6 +39,7 @@ struct PlayerCard: View {
                     .shadow(color: .secondary, radius: 2.5, x: 1, y: 1)
             )
         }
+        .accessibilityIdentifier("playerCard:"+self.player.name)
         .onTapGesture {
             self.isShowingNewHoleInput = true
         }

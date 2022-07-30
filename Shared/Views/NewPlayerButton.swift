@@ -9,10 +9,11 @@ struct NewPlayerButton: View {
     
     var body: some View {
         Image(systemName: "plus.circle.fill")
+            .accessibilityIdentifier("newPlayerButton")
             .font(.largeTitle)
             .foregroundColor(.secondary)
             .onTapGesture {
-                self.isPresented = true            
+                self.isPresented = true
             }
             .sheet(isPresented: $isPresented) {
                 NavigationView {
@@ -20,6 +21,7 @@ struct NewPlayerButton: View {
                         HStack {
                             Text("Name:"~)
                             TextField("", text: $name)
+                                .accessibilityIdentifier("newPlayerNameTextfield")
                                 .textFieldStyle(.roundedBorder)
                                 .focused($nameInFocus)
                                 .onAppear {
@@ -44,6 +46,7 @@ struct NewPlayerButton: View {
                                 self.gameData.add(player: self.name)
                                 self.isPresented = false
                             }
+                            .accessibilityIdentifier("newPlayerAdd")
                             .disabled(self.name.count == 0)
                         }
                     }

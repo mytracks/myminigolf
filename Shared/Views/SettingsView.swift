@@ -44,6 +44,7 @@ struct SettingsView: View {
                     Button("Close"~) {
                         self.activeSheet = nil
                     }
+                    .accessibilityIdentifier("settingsClose")
                 }
             }
             .navigationTitle("Settings")

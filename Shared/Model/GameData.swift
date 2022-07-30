@@ -156,6 +156,8 @@ class GameData: NSObject, ObservableObject, Encodable, Decodable {
     }
     
     func saveState() {
+        guard !myminigolfApp.noPersistence else { return }
+        
         do {
             self.update()
             
@@ -187,6 +189,8 @@ class GameData: NSObject, ObservableObject, Encodable, Decodable {
     }
     
     static func loadState() -> GameData {
+        guard !myminigolfApp.noPersistence else { return GameData() }
+
         do {
             if let data = try Data.load(filename: "gamedata.json") {
                 let gameData = try JSONDecoder().decode(GameData.self, from: data)

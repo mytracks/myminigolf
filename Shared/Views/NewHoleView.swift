@@ -92,6 +92,7 @@ struct NewHoleView: View {
                         }
                         Spacer()
                         Image(systemName: "plus.circle")
+                            .accessibilityIdentifier("newHoleIncreaseStrokes")
                             .font(.largeTitle)
                             .foregroundColor(increaseHolesColor)
                             .onTapGesture {
@@ -132,6 +133,7 @@ struct NewHoleView: View {
                         presentationMode.wrappedValue.dismiss()
                         
                     }
+                    .accessibilityIdentifier("newHoleIncreaseSave")
                     .disabled(!canSave)
                 }
             }

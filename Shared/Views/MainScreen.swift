@@ -73,5 +73,6 @@ struct MainScreen: View {
             }
         }
         .navigationViewStyle(.stack)
+        .accessibilityIdentifier("mainNavigationView")
     }
 }

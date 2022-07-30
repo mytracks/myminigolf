@@ -30,16 +30,42 @@ struct HistoryView: View {
                 }
             }
             .onAppear {
-                self.entries = self.gameData.gameHistory.sortedEntries
+                if myminigolfApp.noPersistence {
+                    self.generateTestData()
+                }
+                else {
+                    self.entries = self.gameData.gameHistory.sortedEntries
+                }
             }
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Close"~) {
                         self.activeSheet = nil
                     }
+                    .accessibilityIdentifier("gameHistoryClose")
                 }
             }
             .navigationTitle("Game History"~)
         }
+    }
+    
+    func generateTestData() {
+        let e1 = GameHistoryEntry()
+        e1.date = Date(timeIntervalSinceReferenceDate: 680288700)
+        e1.gameDescription = "Weissensee"
+        
+        self.entries.append(e1)
+
+        let e2 = GameHistoryEntry()
+        e2.date = Date(timeIntervalSinceReferenceDate: 675786180)
+        e2.gameDescription = "Neubeckum"
+        
+        self.entries.append(e2)
+
+        let e3 = GameHistoryEntry()
+        e3.date = Date(timeIntervalSinceReferenceDate: 669654660)
+        e3.gameDescription = "Paderborn"
+        
+        self.entries.append(e3)
     }
 }

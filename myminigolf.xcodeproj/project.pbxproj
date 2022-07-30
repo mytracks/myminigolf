@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CFB033AA289052AB00A06ADA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CFB033A9289052AB00A06ADA /* .gitignore */; };
-		CFB033AC289053D600A06ADA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CFB033AB289053D600A06ADA /* README.md */; };
+		CF39FCF528943EA90090007C /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39FCA828943CD60090007C /* SnapshotHelper.swift */; };
+		CF39FCF728943F540090007C /* snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39FCF628943F540090007C /* snapshots.swift */; };
 		CFFB9B22288DA142000DE729 /* myminigolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9B12288DA141000DE729 /* myminigolfApp.swift */; };
 		CFFB9B26288DA142000DE729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFFB9B14288DA142000DE729 /* Assets.xcassets */; };
 		CFFB9C09288DA248000DE729 /* NewPlayerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF4288DA248000DE729 /* NewPlayerButton.swift */; };
@@ -34,7 +34,25 @@
 		CFFB9C42288DA66E000DE729 /* LocalizationPostfixOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C41288DA66E000DE729 /* LocalizationPostfixOperator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CF39FCB928943D6A0090007C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFFB9B0D288DA141000DE729 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFFB9B18288DA142000DE729;
+			remoteInfo = "myminigolf (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CF39FCA228943B690090007C /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		CF39FCA528943BFD0090007C /* fastlane.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = fastlane.md; sourceTree = "<group>"; };
+		CF39FCA728943CD60090007C /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
+		CF39FCA828943CD60090007C /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		CF39FCA928943CD60090007C /* Gemfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		CF39FCAA28943CD60090007C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CF39FCB328943D6A0090007C /* myMinigolfUISnapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myMinigolfUISnapshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF39FCF628943F540090007C /* snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapshots.swift; sourceTree = "<group>"; };
 		CFB033A9289052AB00A06ADA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CFB033AB289053D600A06ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CFFB9B12288DA141000DE729 /* myminigolfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myminigolfApp.swift; sourceTree = "<group>"; };
@@ -65,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF39FCB028943D6A0090007C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFFB9B16288DA142000DE729 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,12 +100,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF39FCA428943BEA0090007C /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				CF39FCA528943BFD0090007C /* fastlane.md */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		CF39FCB428943D6A0090007C /* myMinigolfUISnapshots */ = {
+			isa = PBXGroup;
+			children = (
+				CF39FCA828943CD60090007C /* SnapshotHelper.swift */,
+				CF39FCF628943F540090007C /* snapshots.swift */,
+			);
+			path = myMinigolfUISnapshots;
+			sourceTree = "<group>";
+		};
 		CFFB9B0C288DA141000DE729 = {
 			isa = PBXGroup;
 			children = (
+				CF39FCA928943CD60090007C /* Gemfile.lock */,
+				CF39FCAA28943CD60090007C /* LICENSE */,
+				CF39FCA728943CD60090007C /* Snapfile */,
+				CF39FCA428943BEA0090007C /* docs */,
+				CF39FCA228943B690090007C /* Gemfile */,
 				CFB033AB289053D600A06ADA /* README.md */,
 				CFB033A9289052AB00A06ADA /* .gitignore */,
 				CFFB9B11288DA141000DE729 /* Shared */,
+				CF39FCB428943D6A0090007C /* myMinigolfUISnapshots */,
 				CFFB9B1A288DA142000DE729 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				CFFB9B19288DA142000DE729 /* myMinigolf.app */,
+				CF39FCB328943D6A0090007C /* myMinigolfUISnapshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +207,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CF39FCB228943D6A0090007C /* myMinigolfUISnapshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF39FCBB28943D6A0090007C /* Build configuration list for PBXNativeTarget "myMinigolfUISnapshots" */;
+			buildPhases = (
+				CF39FCAF28943D6A0090007C /* Sources */,
+				CF39FCB028943D6A0090007C /* Frameworks */,
+				CF39FCB128943D6A0090007C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF39FCBA28943D6A0090007C /* PBXTargetDependency */,
+			);
+			name = myMinigolfUISnapshots;
+			productName = myMinigolfUISnapshots;
+			productReference = CF39FCB328943D6A0090007C /* myMinigolfUISnapshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		CFFB9B18288DA142000DE729 /* myminigolf (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFFB9B2A288DA142000DE729 /* Build configuration list for PBXNativeTarget "myminigolf (iOS)" */;
@@ -185,6 +252,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					CF39FCB228943D6A0090007C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CFFB9B18288DA142000DE729;
+					};
 					CFFB9B18288DA142000DE729 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -205,18 +276,24 @@
 			projectRoot = "";
 			targets = (
 				CFFB9B18288DA142000DE729 /* myminigolf (iOS) */,
+				CF39FCB228943D6A0090007C /* myMinigolfUISnapshots */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF39FCB128943D6A0090007C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFFB9B17288DA142000DE729 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CFFB9B26288DA142000DE729 /* Assets.xcassets in Resources */,
-				CFB033AA289052AB00A06ADA /* .gitignore in Resources */,
-				CFB033AC289053D600A06ADA /* README.md in Resources */,
 				CFFB9C3D288DA5B9000DE729 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +301,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CF39FCAF28943D6A0090007C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF39FCF528943EA90090007C /* SnapshotHelper.swift in Sources */,
+				CF39FCF728943F540090007C /* snapshots.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFFB9B15288DA142000DE729 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +340,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CF39FCBA28943D6A0090007C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFFB9B18288DA142000DE729 /* myminigolf (iOS) */;
+			targetProxy = CF39FCB928943D6A0090007C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		CFFB9C3F288DA5B9000DE729 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -267,6 +361,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CF39FCBC28943D6A0090007C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TNB35NY7G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.stichling.myMinigolfUISnapshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "myminigolf (iOS)";
+			};
+			name = Debug;
+		};
+		CF39FCBD28943D6A0090007C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TNB35NY7G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.stichling.myMinigolfUISnapshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "myminigolf (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		CFFB9B28288DA142000DE729 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -318,6 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -371,6 +503,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -384,7 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = 4TNB35NY7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -415,7 +548,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = 4TNB35NY7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -444,6 +577,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF39FCBB28943D6A0090007C /* Build configuration list for PBXNativeTarget "myMinigolfUISnapshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF39FCBC28943D6A0090007C /* Debug */,
+				CF39FCBD28943D6A0090007C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CFFB9B10288DA141000DE729 /* Build configuration list for PBXProject "myminigolf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
