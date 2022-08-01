@@ -49,19 +49,19 @@ class Snapshots: XCTestCase {
 //        XCTAssertTrue(playerCard.waitForExistence(timeout: 1))
 //        playerCard.tap()
         
-        let newHoleIncreaseStrokes = self.app.images["newHoleIncreaseStrokes"]
-        XCTAssertTrue(newHoleIncreaseStrokes.waitForExistence(timeout: 1))
+        let newLaneIncreaseStrokes = self.app.images["newLaneIncreaseStrokes"]
+        XCTAssertTrue(newLaneIncreaseStrokes.waitForExistence(timeout: 1))
 
         for _ in 0..<strokes {
             usleep(100*1000)
-            newHoleIncreaseStrokes.tap()
+            newLaneIncreaseStrokes.tap()
         }
         
         if let screenshot = screenshot {
             snapshot(screenshot)
         }
 
-        self.app.buttons["newHoleIncreaseSave"].waitAndTap()
+        self.app.buttons["newLaneIncreaseSave"].waitAndTap()
     }
     
     func playNextLane(dirk: Int, michael: Int, kai: Int) {

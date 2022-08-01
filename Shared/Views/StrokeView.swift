@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ShotView: View {
+struct StrokeView: View {
     let value: Int?
     
     var symbolName: String {

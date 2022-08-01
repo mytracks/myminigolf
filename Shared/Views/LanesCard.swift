@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HolesCard: View {
+struct LanesCard: View {
     @EnvironmentObject var player: Player
     var showAllLanes: Int?
     
@@ -15,7 +15,7 @@ struct HolesCard: View {
         
         return LazyVGrid(columns: columns) {
             ForEach(1..<lanes+1, id: \.self) { i in
-                ShotView(value: self.player.holes[i])
+                StrokeView(value: self.player.lanes[i])
             }
         }
     }
@@ -24,9 +24,9 @@ struct HolesCard: View {
         let columns = [GridItem(.adaptive(minimum: 20))]
         
         return LazyVGrid(columns: columns) {
-            ForEach(Array(self.player.holes.keys.sorted()), id: \.self) { hole in 
-                if let value =  self.player.holes[hole] {
-                    ShotView(value: value)
+            ForEach(Array(self.player.lanes.keys.sorted()), id: \.self) { lane in 
+                if let value =  self.player.lanes[lane] {
+                    StrokeView(value: value)
                 }
             }
         }

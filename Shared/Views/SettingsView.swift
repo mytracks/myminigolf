@@ -22,14 +22,14 @@ struct SettingsView: View {
                 .listStyle(.insetGrouped)
             }
             .onAppear {
-                self.maxStrokes = self.gameData.settingsMaxShots
-                self.numberLanes = self.gameData.settingsNumberHoles
+                self.maxStrokes = self.gameData.settingsMaxStrokes
+                self.numberLanes = self.gameData.settingsNumberLanes
                 self.showAllLanes = UserDefaults.standard.bool(forKey: "ShowAllLanes")
             }
             .onChange(of: self.activeSheet) { activeSheet in 
                 if activeSheet != .settings {
-                    self.gameData.settingsMaxShots = self.maxStrokes
-                    self.gameData.settingsNumberHoles = self.numberLanes
+                    self.gameData.settingsMaxStrokes = self.maxStrokes
+                    self.gameData.settingsNumberLanes = self.numberLanes
                     self.gameData.saveState()
                     
                     if !self.gameData.isInGame {

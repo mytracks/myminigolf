@@ -4,10 +4,10 @@ struct PlayerCard: View {
     @EnvironmentObject var player: Player
     @EnvironmentObject var gameData: GameData
     
-    @State private var isShowingNewHoleInput = false
+    @State private var isShowingNewLaneInput = false
     
     var body: some View {
-        let showAllLanes = UserDefaults.standard.bool(forKey: "ShowAllLanes") ? self.gameData.numberHoles : nil
+        let showAllLanes = UserDefaults.standard.bool(forKey: "ShowAllLanes") ? self.gameData.numberLanes : nil
         return Group {
             VStack {
                 HStack {
@@ -20,13 +20,13 @@ struct PlayerCard: View {
                         .foregroundColor(.primary)
                 }
                 HStack {
-                    Text("\(self.player.playedNumberHoles)/\(self.gameData.numberHoles)")
+                    Text("\(self.player.playedNumberLanes)/\(self.gameData.numberLanes)")
                         .font(.footnote)
                         .foregroundColor(.secondary)
                     Spacer()
                 }
                 HStack {
-                    HolesCard(showAllLanes: showAllLanes)
+                    LanesCard(showAllLanes: showAllLanes)
                     Spacer()
                 }
             }
@@ -41,10 +41,10 @@ struct PlayerCard: View {
         }
         .accessibilityIdentifier("playerCard:"+self.player.name)
         .onTapGesture {
-            self.isShowingNewHoleInput = true
+            self.isShowingNewLaneInput = true
         }
-        .sheet(isPresented: $isShowingNewHoleInput) {
-            NewHoleView().environmentObject(self.player)
+        .sheet(isPresented: $isShowingNewLaneInput) {
+            NewLaneView().environmentObject(self.player)
         }
     }
 }

@@ -2,7 +2,7 @@ import SwiftUI
 
 class Player: NSObject, ObservableObject, Codable {
     let name: String
-    @Published private (set) var holes = [Int:Int]()
+    @Published private (set) var lanes = [Int:Int]()
     @Published private (set) var sum: Int = 0
     
     init(name: String) {
@@ -12,54 +12,54 @@ class Player: NSObject, ObservableObject, Codable {
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try values.decode(String.self, forKey: .name)
-        self.holes = try values.decode([Int:Int].self, forKey: .holes)
+        self.lanes = try values.decode([Int:Int].self, forKey: .lanes)
     }
     
-    func add(hole: Int, value: Int) {
-        self.holes[hole] = value
+    func add(lane: Int, value: Int) {
+        self.lanes[lane] = value
         self.update()
     }
     
-    func remove(hole: Int) {
-        self.holes.removeValue(forKey: hole)
+    func remove(lane: Int) {
+        self.lanes.removeValue(forKey: lane)
         self.update()
     } 
     
-    var playedNumberHoles: Int {
-        self.holes.keys.count
+    var playedNumberLanes: Int {
+        self.lanes.keys.count
     }
     
-    func valueOf(hole: Int) -> Int? {
-        self.holes[hole]
+    func valueOf(lane: Int) -> Int? {
+        self.lanes[lane]
     }
     
-    func getNextHole(gameData: GameData) -> Int? {
+    func getNextLane(gameData: GameData) -> Int? {
         var index = 1
-        for hole in self.holes.keys.sorted() {
-            if hole != index {
+        for lane in self.lanes.keys.sorted() {
+            if lane != index {
                 return index
             }
             
             index += 1
         }
         
-        if index > gameData.numberHoles {
+        if index > gameData.numberLanes {
             return nil
         }
         
         return index
     }
     
-    fileprivate func resetHoles() {
-        self.holes.removeAll()
+    fileprivate func resetLanes() {
+        self.lanes.removeAll()
         self.update()
     }
     
     func update() {
         var s = 0
         
-        for hole in self.holes.keys {
-            s += self.holes[hole] ?? 0
+        for lane in self.lanes.keys {
+            s += self.lanes[lane] ?? 0
         }
         
         self.sum = s
@@ -67,13 +67,13 @@ class Player: NSObject, ObservableObject, Codable {
     
     enum CodingKeys: String, CodingKey {
         case name
-        case holes
+        case lanes
     }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(self.name, forKey: .name)
-        try container.encode(self.holes, forKey: .holes)
+        try container.encode(self.lanes, forKey: .lanes)
     }
 }
 
@@ -83,20 +83,20 @@ class GameData: NSObject, ObservableObject, Encodable, Decodable {
     @Published var currentGameId: String
     @Published var startOfGame: Date?
     
-    @Published var settingsNumberHoles: Int
-    @Published var settingsMaxShots: Int
+    @Published var settingsNumberLanes: Int
+    @Published var settingsMaxStrokes: Int
     
-    @Published var numberHoles: Int
-    @Published var maxShots: Int
+    @Published var numberLanes: Int
+    @Published var maxStrokes: Int
     @Published var gameDescription: String
     
     @Published var gameHistory = GameHistory.loadHistory()
     
     override init() {
-        self.numberHoles = 18
-        self.maxShots = 7
-        self.settingsNumberHoles = 18
-        self.settingsMaxShots = 7
+        self.numberLanes = 18
+        self.maxStrokes = 7
+        self.settingsNumberLanes = 18
+        self.settingsMaxStrokes = 7
         self.currentGameId = UUID().uuidString
         self.gameDescription = ""
         
@@ -107,10 +107,10 @@ class GameData: NSObject, ObservableObject, Encodable, Decodable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         self.currentGameId = (try? values.decode(String.self, forKey: .currentGameId)) ?? UUID().uuidString
         self.players = (try? values.decode([Player].self, forKey: .players)) ?? [Player]()
-        self.numberHoles = (try? values.decode(Int.self, forKey: .numberLanes)) ?? 18
-        self.maxShots = (try? values.decode(Int.self, forKey: .maxStrokes)) ?? 7
-        self.settingsNumberHoles = (try? values.decode(Int.self, forKey: .settingsNumberLanes)) ?? 18
-        self.settingsMaxShots = (try? values.decode(Int.self, forKey: .settingsMaxStrokes)) ?? 7
+        self.numberLanes = (try? values.decode(Int.self, forKey: .numberLanes)) ?? 18
+        self.maxStrokes = (try? values.decode(Int.self, forKey: .maxStrokes)) ?? 7
+        self.settingsNumberLanes = (try? values.decode(Int.self, forKey: .settingsNumberLanes)) ?? 18
+        self.settingsMaxStrokes = (try? values.decode(Int.self, forKey: .settingsMaxStrokes)) ?? 7
         self.gameDescription = (try? values.decode(String.self, forKey: .description)) ?? ""
         
         super.init()
@@ -124,14 +124,14 @@ class GameData: NSObject, ObservableObject, Encodable, Decodable {
         self.gameHistory.saveCurrentGame(gameData: self)
         
         for player in self.players {
-            player.resetHoles()
+            player.resetLanes()
         }
         
         if let description = description {
             self.gameDescription = description
         }
-        self.maxShots = self.settingsMaxShots
-        self.numberHoles = self.settingsNumberHoles
+        self.maxStrokes = self.settingsMaxStrokes
+        self.numberLanes = self.settingsNumberLanes
         self.currentGameId = UUID().uuidString
         self.startOfGame = Date()
         
@@ -176,7 +176,7 @@ class GameData: NSObject, ObservableObject, Encodable, Decodable {
         var playing = false
         
         for player in self.players {
-            if player.playedNumberHoles > 0 {
+            if player.playedNumberLanes > 0 {
                 playing = true
             }
         }
@@ -221,10 +221,10 @@ class GameData: NSObject, ObservableObject, Encodable, Decodable {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(self.currentGameId, forKey: .currentGameId)
         try container.encode(self.players, forKey: .players)
-        try container.encode(self.numberHoles, forKey: .numberLanes)
-        try container.encode(self.maxShots, forKey: .maxStrokes)
-        try container.encode(self.settingsNumberHoles, forKey: .settingsNumberLanes)
-        try container.encode(self.settingsMaxShots, forKey: .settingsMaxStrokes)
+        try container.encode(self.numberLanes, forKey: .numberLanes)
+        try container.encode(self.maxStrokes, forKey: .maxStrokes)
+        try container.encode(self.settingsNumberLanes, forKey: .settingsNumberLanes)
+        try container.encode(self.settingsMaxStrokes, forKey: .settingsMaxStrokes)
         try container.encode(self.gameDescription, forKey: .description)
     }
 }

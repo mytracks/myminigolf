@@ -95,9 +95,9 @@ struct MainMenuButton: View {
             ]
         
         for lanes in 0..<values.count/3 {
-            dirk.add(hole: lanes+1, value: values[lanes*3+0])
-            michael.add(hole: lanes+1, value: values[lanes*3+1])
-            kai.add(hole: lanes+1, value: values[lanes*3+2])
+            dirk.add(lane: lanes+1, value: values[lanes*3+0])
+            michael.add(lane: lanes+1, value: values[lanes*3+1])
+            kai.add(lane: lanes+1, value: values[lanes*3+2])
         }
     }
 }

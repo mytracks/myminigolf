@@ -22,8 +22,8 @@ class SavedGame: NSObject, ObservableObject, Codable {
         self.id = currentGameData.currentGameId
         self.date = currentGameData.startOfGame ?? Date()
         self.gameDescription = currentGameData.gameDescription
-        self.numberLanes = currentGameData.numberHoles
-        self.maxStrokes = currentGameData.maxShots
+        self.numberLanes = currentGameData.numberLanes
+        self.maxStrokes = currentGameData.maxStrokes
         
         self.players = currentGameData.players
     }

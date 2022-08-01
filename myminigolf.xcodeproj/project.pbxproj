@@ -13,18 +13,18 @@
 		CFFB9B26288DA142000DE729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFFB9B14288DA142000DE729 /* Assets.xcassets */; };
 		CFFB9C09288DA248000DE729 /* NewPlayerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF4288DA248000DE729 /* NewPlayerButton.swift */; };
 		CFFB9C0D288DA248000DE729 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF6288DA248000DE729 /* SettingsView.swift */; };
-		CFFB9C0F288DA248000DE729 /* ShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF7288DA248000DE729 /* ShotView.swift */; };
+		CFFB9C0F288DA248000DE729 /* StrokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF7288DA248000DE729 /* StrokeView.swift */; };
 		CFFB9C11288DA248000DE729 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF8288DA248000DE729 /* PlayerCard.swift */; };
 		CFFB9C13288DA248000DE729 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BF9288DA248000DE729 /* MainScreen.swift */; };
 		CFFB9C15288DA248000DE729 /* HistoryEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFA288DA248000DE729 /* HistoryEntryView.swift */; };
-		CFFB9C17288DA248000DE729 /* HolesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFB288DA248000DE729 /* HolesCard.swift */; };
+		CFFB9C17288DA248000DE729 /* LanesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFB288DA248000DE729 /* LanesCard.swift */; };
 		CFFB9C19288DA248000DE729 /* HistoryPlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFC288DA248000DE729 /* HistoryPlayerCard.swift */; };
-		CFFB9C1B288DA248000DE729 /* NewHoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFD288DA248000DE729 /* NewHoleView.swift */; };
+		CFFB9C1B288DA248000DE729 /* NewLaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFD288DA248000DE729 /* NewLaneView.swift */; };
 		CFFB9C1D288DA248000DE729 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFE288DA248000DE729 /* AboutView.swift */; };
 		CFFB9C1F288DA248000DE729 /* HistoryEntryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9BFF288DA248000DE729 /* HistoryEntryEditView.swift */; };
 		CFFB9C21288DA248000DE729 /* NewGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C00288DA248000DE729 /* NewGameView.swift */; };
 		CFFB9C23288DA248000DE729 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C01288DA248000DE729 /* HistoryView.swift */; };
-		CFFB9C29288DA248000DE729 /* HoleNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C04288DA248000DE729 /* HoleNumberView.swift */; };
+		CFFB9C29288DA248000DE729 /* LaneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C04288DA248000DE729 /* LaneNumberView.swift */; };
 		CFFB9C2D288DA248000DE729 /* DataSaveLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C06288DA248000DE729 /* DataSaveLoad.swift */; };
 		CFFB9C2F288DA248000DE729 /* MainMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C07288DA248000DE729 /* MainMenuButton.swift */; };
 		CFFB9C31288DA248000DE729 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB9C08288DA248000DE729 /* AppStyle.swift */; };
@@ -60,18 +60,18 @@
 		CFFB9B19288DA142000DE729 /* myMinigolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMinigolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFB9BF4288DA248000DE729 /* NewPlayerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPlayerButton.swift; sourceTree = "<group>"; };
 		CFFB9BF6288DA248000DE729 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		CFFB9BF7288DA248000DE729 /* ShotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotView.swift; sourceTree = "<group>"; };
+		CFFB9BF7288DA248000DE729 /* StrokeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeView.swift; sourceTree = "<group>"; };
 		CFFB9BF8288DA248000DE729 /* PlayerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
 		CFFB9BF9288DA248000DE729 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		CFFB9BFA288DA248000DE729 /* HistoryEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryEntryView.swift; sourceTree = "<group>"; };
-		CFFB9BFB288DA248000DE729 /* HolesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolesCard.swift; sourceTree = "<group>"; };
+		CFFB9BFB288DA248000DE729 /* LanesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanesCard.swift; sourceTree = "<group>"; };
 		CFFB9BFC288DA248000DE729 /* HistoryPlayerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryPlayerCard.swift; sourceTree = "<group>"; };
-		CFFB9BFD288DA248000DE729 /* NewHoleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHoleView.swift; sourceTree = "<group>"; };
+		CFFB9BFD288DA248000DE729 /* NewLaneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLaneView.swift; sourceTree = "<group>"; };
 		CFFB9BFE288DA248000DE729 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		CFFB9BFF288DA248000DE729 /* HistoryEntryEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryEntryEditView.swift; sourceTree = "<group>"; };
 		CFFB9C00288DA248000DE729 /* NewGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameView.swift; sourceTree = "<group>"; };
 		CFFB9C01288DA248000DE729 /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		CFFB9C04288DA248000DE729 /* HoleNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoleNumberView.swift; sourceTree = "<group>"; };
+		CFFB9C04288DA248000DE729 /* LaneNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaneNumberView.swift; sourceTree = "<group>"; };
 		CFFB9C06288DA248000DE729 /* DataSaveLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSaveLoad.swift; sourceTree = "<group>"; };
 		CFFB9C07288DA248000DE729 /* MainMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuButton.swift; sourceTree = "<group>"; };
 		CFFB9C08288DA248000DE729 /* AppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
@@ -164,15 +164,15 @@
 				CFFB9BFA288DA248000DE729 /* HistoryEntryView.swift */,
 				CFFB9BFC288DA248000DE729 /* HistoryPlayerCard.swift */,
 				CFFB9C01288DA248000DE729 /* HistoryView.swift */,
-				CFFB9C04288DA248000DE729 /* HoleNumberView.swift */,
-				CFFB9BFB288DA248000DE729 /* HolesCard.swift */,
+				CFFB9C04288DA248000DE729 /* LaneNumberView.swift */,
+				CFFB9BFB288DA248000DE729 /* LanesCard.swift */,
 				CFFB9C07288DA248000DE729 /* MainMenuButton.swift */,
 				CFFB9C00288DA248000DE729 /* NewGameView.swift */,
-				CFFB9BFD288DA248000DE729 /* NewHoleView.swift */,
+				CFFB9BFD288DA248000DE729 /* NewLaneView.swift */,
 				CFFB9BF4288DA248000DE729 /* NewPlayerButton.swift */,
 				CFFB9BF8288DA248000DE729 /* PlayerCard.swift */,
 				CFFB9BF6288DA248000DE729 /* SettingsView.swift */,
-				CFFB9BF7288DA248000DE729 /* ShotView.swift */,
+				CFFB9BF7288DA248000DE729 /* StrokeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,9 +320,9 @@
 				CFFB9C19288DA248000DE729 /* HistoryPlayerCard.swift in Sources */,
 				CFFB9C38288DA38E000DE729 /* GameData.swift in Sources */,
 				CFFB9C37288DA38E000DE729 /* GameHistory.swift in Sources */,
-				CFFB9C0F288DA248000DE729 /* ShotView.swift in Sources */,
+				CFFB9C0F288DA248000DE729 /* StrokeView.swift in Sources */,
 				CFFB9C31288DA248000DE729 /* AppStyle.swift in Sources */,
-				CFFB9C29288DA248000DE729 /* HoleNumberView.swift in Sources */,
+				CFFB9C29288DA248000DE729 /* LaneNumberView.swift in Sources */,
 				CFFB9C1F288DA248000DE729 /* HistoryEntryEditView.swift in Sources */,
 				CFFB9C1D288DA248000DE729 /* AboutView.swift in Sources */,
 				CFFB9C13288DA248000DE729 /* MainScreen.swift in Sources */,
@@ -331,9 +331,9 @@
 				CFFB9C0D288DA248000DE729 /* SettingsView.swift in Sources */,
 				CFFB9C42288DA66E000DE729 /* LocalizationPostfixOperator.swift in Sources */,
 				CFFB9B22288DA142000DE729 /* myminigolfApp.swift in Sources */,
-				CFFB9C1B288DA248000DE729 /* NewHoleView.swift in Sources */,
+				CFFB9C1B288DA248000DE729 /* NewLaneView.swift in Sources */,
 				CFFB9C09288DA248000DE729 /* NewPlayerButton.swift in Sources */,
-				CFFB9C17288DA248000DE729 /* HolesCard.swift in Sources */,
+				CFFB9C17288DA248000DE729 /* LanesCard.swift in Sources */,
 				CFFB9C21288DA248000DE729 /* NewGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

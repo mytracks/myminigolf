@@ -18,13 +18,13 @@ struct HistoryPlayerCard: View {
                         .foregroundColor(.primary)
                 }
                 HStack {
-                    Text("\(self.player.playedNumberHoles)/\(self.savedGame.numberLanes)")
+                    Text("\(self.player.playedNumberLanes)/\(self.savedGame.numberLanes)")
                         .font(.footnote)
                         .foregroundColor(.secondary)
                     Spacer()
                 }
                 HStack {
-                    HolesCard(showAllLanes: self.savedGame.numberLanes)
+                    LanesCard(showAllLanes: self.savedGame.numberLanes)
                     Spacer()
                 }
             }

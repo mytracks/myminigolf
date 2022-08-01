@@ -1,24 +1,24 @@
 import SwiftUI
 import Combine
 
-struct NewHoleHolesView: View {
+struct NewLaneLanesView: View {
     @EnvironmentObject var player: Player
     @EnvironmentObject var gameData: GameData
-    @Binding var selectedHole: Int?
+    @Binding var selectedLane: Int?
     @Binding var value: Int?
     
     var body: some View {
-        let allHoles = self.player.holes.keys
+        let allLanes = self.player.lanes.keys
         let columns = [GridItem(.adaptive(minimum: 40))]
         
         return LazyVGrid(columns: columns) {
-            ForEach(1..<self.gameData.numberHoles+1, id: \.self) { i in
-                HoleNumberView(value: i, alreadyPlayed: allHoles.contains(i), selected: i == self.selectedHole)
+            ForEach(1..<self.gameData.numberLanes+1, id: \.self) { i in
+                LaneNumberView(value: i, alreadyPlayed: allLanes.contains(i), selected: i == self.selectedLane)
                     .onTapGesture {
-                        self.selectedHole = i
+                        self.selectedLane = i
                         
-                        if let selectedHole = self.selectedHole {
-                            self.value = self.player.valueOf(hole: selectedHole)
+                        if let selectedLane = self.selectedLane {
+                            self.value = self.player.valueOf(lane: selectedLane)
                         }
                     }
             }
@@ -26,14 +26,14 @@ struct NewHoleHolesView: View {
     }
 }
 
-struct NewHoleView: View {
+struct NewLaneView: View {
     @EnvironmentObject var player: Player
     @EnvironmentObject var gameData: GameData
     @Environment(\.presentationMode) var presentationMode
     
     @State var valueString = ""
     @State var value: Int?
-    @State var hole: Int?
+    @State var lane: Int?
     @State var canSave = false
     
     func set(value: Int?) {
@@ -48,26 +48,26 @@ struct NewHoleView: View {
     }
     
     func updateCanSave() {
-        self.canSave = self.hole != nil
+        self.canSave = self.lane != nil
     }
     
     var body: some View {
-        let canIncreaseHoles = self.value == nil || self.value! < self.gameData.maxShots
-        let canDecreaseHoles = self.value != nil
-        let increaseHolesColor = canIncreaseHoles ? Color.primary : Color.secondary
-        let decreaseHolesColor = canDecreaseHoles ? Color.primary : Color.secondary
+        let canIncreaseLanes = self.value == nil || self.value! < self.gameData.maxStrokes
+        let canDecreaseLanes = self.value != nil
+        let increaseLanesColor = canIncreaseLanes ? Color.primary : Color.secondary
+        let decreaseLanesColor = canDecreaseLanes ? Color.primary : Color.secondary
         
         return NavigationView {
             List {
                 Section("Lane"~) {
-                    let _ = self.hole // Workaround
-                    NewHoleHolesView(selectedHole: $hole, value: $value)
+                    let _ = self.lane // Workaround
+                    NewLaneLanesView(selectedLane: $lane, value: $value)
                 }
                 Section("Strokes"~) {
                     HStack {
                         Image(systemName: "minus.circle")
                             .font(.largeTitle)
-                            .foregroundColor(decreaseHolesColor)
+                            .foregroundColor(decreaseLanesColor)
                             .onTapGesture {
                                 if let value = self.value {
                                     if value > 1 {
@@ -92,12 +92,12 @@ struct NewHoleView: View {
                         }
                         Spacer()
                         Image(systemName: "plus.circle")
-                            .accessibilityIdentifier("newHoleIncreaseStrokes")
+                            .accessibilityIdentifier("newLaneIncreaseStrokes")
                             .font(.largeTitle)
-                            .foregroundColor(increaseHolesColor)
+                            .foregroundColor(increaseLanesColor)
                             .onTapGesture {
                                 if let value = self.value {
-                                    if value < self.gameData.maxShots {
+                                    if value < self.gameData.maxStrokes {
                                         self.set(value: value+1)
                                     }
                                 }
@@ -109,7 +109,7 @@ struct NewHoleView: View {
                 }
                 .listStyle(.insetGrouped)
             }
-            .onChange(of: self.hole) { hole in
+            .onChange(of: self.lane) { lane in
                 self.updateCanSave()
             }
             .navigationTitle(self.player.name)
@@ -121,27 +121,27 @@ struct NewHoleView: View {
                 } 
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save"~) {
-                        if let hole = self.hole {
+                        if let lane = self.lane {
                             if let value = self.value {
-                                self.player.add(hole: hole, value: value)
+                                self.player.add(lane: lane, value: value)
                             }
                             else {
-                                self.player.remove(hole: hole)
+                                self.player.remove(lane: lane)
                             }
                             self.gameData.saveState()
                         }
                         presentationMode.wrappedValue.dismiss()
                         
                     }
-                    .accessibilityIdentifier("newHoleIncreaseSave")
+                    .accessibilityIdentifier("newLaneIncreaseSave")
                     .disabled(!canSave)
                 }
             }
             .onAppear() {
-                self.hole = self.player.getNextHole(gameData: self.gameData)
+                self.lane = self.player.getNextLane(gameData: self.gameData)
                 
-                if let hole = self.hole {
-                    self.value = self.player.valueOf(hole: hole)
+                if let lane = self.lane {
+                    self.value = self.player.valueOf(lane: lane)
                 }
             }
         }

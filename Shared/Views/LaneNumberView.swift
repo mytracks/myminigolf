@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HoleNumberView: View {
+struct LaneNumberView: View {
     let value: Int
     let alreadyPlayed: Bool
     let selected: Bool
